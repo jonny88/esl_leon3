@@ -1,0 +1,944 @@
+[library]
+name = grlib
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/grlib/stdlib/version.vhd
+ []
+ [file]
+  name = ../../lib/grlib/stdlib/config.vhd
+ []
+ [file]
+  name = ../../lib/grlib/stdlib/stdlib.vhd
+ []
+ [file]
+  name = ../../lib/grlib/stdlib/stdio.vhd
+ []
+ [file]
+  name = ../../lib/grlib/stdlib/testlib.vhd
+ []
+ [file]
+  name = ../../lib/grlib/util/util.vhd
+ []
+ [file]
+  name = ../../lib/grlib/sparc/sparc.vhd
+ []
+ [file]
+  name = ../../lib/grlib/sparc/sparc_disas.vhd
+ []
+ [file]
+  name = ../../lib/grlib/sparc/cpu_disas.vhd
+ []
+ [file]
+  name = ../../lib/grlib/modgen/multlib.vhd
+ []
+ [file]
+  name = ../../lib/grlib/modgen/leaves.vhd
+ []
+ [file]
+  name = ../../lib/grlib/amba/amba.vhd
+ []
+ [file]
+  name = ../../lib/grlib/amba/devices.vhd
+ []
+ [file]
+  name = ../../lib/grlib/amba/defmst.vhd
+ []
+ [file]
+  name = ../../lib/grlib/amba/apbctrl.vhd
+ []
+ [file]
+  name = ../../lib/grlib/amba/ahbctrl.vhd
+ []
+ [file]
+  name = ../../lib/grlib/amba/dma2ahb_pkg.vhd
+ []
+ [file]
+  name = ../../lib/grlib/amba/dma2ahb.vhd
+ []
+ [file]
+  name = ../../lib/grlib/amba/ahbmst.vhd
+ []
+ [file]
+  name = ../../lib/grlib/amba/dma2ahb_tp.vhd
+ []
+ [file]
+  name = ../../lib/grlib/amba/amba_tp.vhd
+ []
+[]
+[library]
+name = unisim
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/tech/unisim/ise/unisim_VPKG.vhd
+ []
+ [file]
+  name = ../../lib/tech/unisim/ise/unisim_VCOMP.vhd
+ []
+ [file]
+  name = ../../lib/tech/unisim/ise/simple_simprim.vhd
+ []
+ [file]
+  name = ../../lib/tech/unisim/ise/unisim_VITAL.vhd
+ []
+[]
+[library]
+name = dware
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/tech/dware/simprims/DWpackages.vhd
+ []
+ [file]
+  name = ../../lib/tech/dware/simprims/DW_Foundation_arith.vhd
+ []
+ [file]
+  name = ../../lib/tech/dware/simprims/DW_Foundation_comp.vhd
+ []
+ [file]
+  name = ../../lib/tech/dware/simprims/DW_Foundation_comp_arith.vhd
+ []
+[]
+[library]
+name = synplify
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/synplify/sim/synplify.vhd
+ []
+ [file]
+  name = ../../lib/synplify/sim/synattr.vhd
+ []
+[]
+[library]
+name = techmap
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/techmap/gencomp/gencomp.vhd
+ []
+ [file]
+  name = ../../lib/techmap/gencomp/netcomp.vhd
+ []
+ [file]
+  name = ../../lib/techmap/inferred/memory_inferred.vhd
+ []
+ [file]
+  name = ../../lib/techmap/inferred/ddr_inferred.vhd
+ []
+ [file]
+  name = ../../lib/techmap/inferred/mul_inferred.vhd
+ []
+ [file]
+  name = ../../lib/techmap/inferred/ddr_phy_inferred.vhd
+ []
+ [file]
+  name = ../../lib/techmap/inferred/ddrphy_datapath.vhd
+ []
+ [file]
+  name = ../../lib/techmap/inferred/sim_pll.vhd
+ []
+ [file]
+  name = ../../lib/techmap/dware/mul_dware.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/memory_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/buffer_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/pads_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/clkgen_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/tap_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/ddr_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/ddr_phy_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/grspwc_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/grspwc2_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/grusbhc_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/ssrctrl_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/sysmon_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/mul_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/spictrl_unisim.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/spictrl_unisim_comb0.vhd
+ []
+ [file]
+  name = ../../lib/techmap/unisim/spictrl_unisim_comb1.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/allclkgen.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/allddr.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/allmem.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/allmul.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/allpads.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/alltap.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/clkgen.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/clkmux.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/clkand.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/ddr_ireg.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/ddr_oreg.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/ddrphy.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/syncram.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/syncram64.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/syncram_2p.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/syncram_dp.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/syncfifo.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/regfile_3p.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/tap.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/techbuf.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/nandtree.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/clkpad.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/clkpad_ds.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/inpad.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/inpad_ds.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/iodpad.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/iopad.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/iopad_ds.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/lvds_combo.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/odpad.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/outpad.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/outpad_ds.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/toutpad.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/skew_outpad.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/grspwc_net.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/grspwc2_net.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/grlfpw_net.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/grfpw_net.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/leon4_net.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/mul_61x61.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/cpu_disas_net.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/grusbhc_net.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/ringosc.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/ssrctrl_net.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/grpci2_phy_net.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/system_monitor.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/grgates.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/inpad_ddr.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/outpad_ddr.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/iopad_ddr.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/syncram128bw.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/syncram256bw.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/syncram128.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/syncram156bw.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/techmult.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/spictrl_net.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/scanreg.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/syncrambw.vhd
+ []
+ [file]
+  name = ../../lib/techmap/maps/syncram_2pbw.vhd
+ []
+[]
+[library]
+name = eth
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/eth/comp/ethcomp.vhd
+ []
+ [file]
+  name = ../../lib/eth/core/greth_pkg.vhd
+ []
+ [file]
+  name = ../../lib/eth/core/eth_rstgen.vhd
+ []
+ [file]
+  name = ../../lib/eth/core/eth_edcl_ahb_mst.vhd
+ []
+ [file]
+  name = ../../lib/eth/core/eth_ahb_mst.vhd
+ []
+ [file]
+  name = ../../lib/eth/core/greth_tx.vhd
+ []
+ [file]
+  name = ../../lib/eth/core/greth_rx.vhd
+ []
+ [file]
+  name = ../../lib/eth/core/grethc.vhd
+ []
+ [file]
+  name = ../../lib/eth/wrapper/greth_gen.vhd
+ []
+ [file]
+  name = ../../lib/eth/wrapper/greth_gbit_gen.vhd
+ []
+[]
+[library]
+name = opencores
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/opencores/occomp/occomp.vhd
+ []
+ [file]
+  name = ../../lib/opencores/i2c/i2c_master_bit_ctrl.vhd
+ []
+ [file]
+  name = ../../lib/opencores/i2c/i2c_master_byte_ctrl.vhd
+ []
+ [file]
+  name = ../../lib/opencores/i2c/i2coc.vhd
+ []
+[]
+[library]
+name = gaisler
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/gaisler/arith/arith.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/arith/mul32.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/arith/div32.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/memctrl/memctrl.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/memctrl/sdctrl.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/memctrl/sdctrl64.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/memctrl/sdmctrl.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/memctrl/srctrl.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/leon3.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmuconfig.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmuiface.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/libmmu.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/libiu.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/libcache.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/libproc3.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/cachemem.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmu_icache.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmu_dcache.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmu_acache.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmutlbcam.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmulrue.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmulru.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmutlb.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmutw.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmu.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mmu_cache.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/cpu_disasx.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/iu3.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/grfpwx.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/mfpwx.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/grlfpwx.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/tbufmem.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/dsu3x.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/dsu3.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/proc3.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/leon3s.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/leon3cg.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/irqmp.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/grfpwxsh.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/grfpushwx.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/leon3/leon3sh.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/misc.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/rstgen.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/gptimer.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/ahbram.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/ahbdpram.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/ahbtrace.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/ahbtrace_mb.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/ahbtrace_mmb.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/grgpio.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/ahbstat.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/logan.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/apbps2.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/charrom_package.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/charrom.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/apbvga.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/svgactrl.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/wild.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/wild2ahb.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/grsysmon.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/gracectrl.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/grgpreg.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/ahbmst2.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/ahb_mst_iface.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/misc/grgprbank.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/net/net.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/uart/uart.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/uart/libdcom.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/uart/apbuart.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/uart/dcom.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/uart/dcom_uart.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/uart/ahbuart.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/sim/sim.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/sim/sram.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/sim/ata_device.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/sim/sram16.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/sim/phy.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/sim/ahbrep.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/sim/delay_wire.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/sim/pwm_check.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/sim/usbsim.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/sim/grusbdcsim.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/sim/grusb_dclsim.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/jtag/jtag.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/jtag/libjtagcom.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/jtag/jtagcom.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/jtag/ahbjtag.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/jtag/ahbjtag_bsd.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/jtag/bscanregs.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/jtag/bscanregsbd.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/jtag/jtagtst.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/greth/ethernet_mac.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/greth/greth.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/greth/greth_mb.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/greth/greth_gbit.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/greth/greth_gbit_mb.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/greth/grethm.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/ddr/ddrphy_wrap.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/ddr/ddrsp16a.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/ddr/ddrsp32a.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/ddr/ddrsp64a.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/ddr/ddrspa.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/ddr/ddr2spa.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/ddr/ddr2buf.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/ddr/ddr2spax.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/ddr/ddr2spax_ahb.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/ddr/ddr2spax_ddr.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/i2c/i2c.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/i2c/i2cmst.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/i2c/i2cmst_gen.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/i2c/i2cslv.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/i2c/i2c2ahbx.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/i2c/i2c2ahb.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/i2c/i2c2ahb_apb.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/spi/spi.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/spi/spimctrl.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/spi/spictrlx.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/spi/spictrl.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/spi/spi2ahbx.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/spi/spi2ahb.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/spi/spi2ahb_apb.vhd
+ []
+ [file]
+  name = ../../lib/gaisler/spi/spi_flash.vhd
+ []
+[]
+[library]
+name = esa
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/esa/memoryctrl/memoryctrl.vhd
+ []
+ [file]
+  name = ../../lib/esa/memoryctrl/mctrl.vhd
+ []
+[]
+[library]
+name = cypress
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/cypress/ssram/components.vhd
+ []
+ [file]
+  name = ../../lib/cypress/ssram/package_utility.vhd
+ []
+ [file]
+  name = ../../lib/cypress/ssram/cy7c1354b.vhd
+ []
+ [file]
+  name = ../../lib/cypress/ssram/cy7c1380d.vhd
+ []
+[]
+[library]
+name = hynix
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/hynix/ddr2/HY5PS121621F_PACK.vhd
+ []
+ [file]
+  name = ../../lib/hynix/ddr2/HY5PS121621F.vhd
+ []
+ [file]
+  name = ../../lib/hynix/ddr2/components.vhd
+ []
+[]
+[library]
+name = micron
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/micron/sdram/components.vhd
+ []
+ [file]
+  name = ../../lib/micron/sdram/mt48lc16m16a2.vhd
+ []
+ [file]
+  name = ../../lib/micron/ddr/mt46v16m16.vhd
+ []
+[]
+[library]
+name = sonata
+toplevel = testbench
+  [options]
+   [booloption]
+    name   = -autoorder
+    value  = 0
+    invert = 0
+   []
+  []
+ [file]
+  name = ../../lib/work/debug/debug.vhd
+ []
+ [file]
+  name = ../../lib/work/debug/grtestmod.vhd
+ []
+ [file]
+  name = ../../lib/work/debug/cpu_disas.vhd
+ []
+ [file]
+  name = config.vhd
+ []
+ [file]
+  name = ahbrom.vhd
+ []
+ [file]
+  name = svga2ch7301c.vhd
+ []
+ [file]
+  name = leon3mp.vhd
+ []
+ [file]
+  name = testbench.vhd
+ []
+[]

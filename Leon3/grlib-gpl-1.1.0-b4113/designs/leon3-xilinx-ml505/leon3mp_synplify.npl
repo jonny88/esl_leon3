@@ -1,0 +1,20 @@
+JDF G
+PROJECT leon3mp
+DESIGN leon3mp
+DEVFAM Virtex5
+DEVICE xc5vlx50t
+DEVSPEED -1
+DEVPKG ff1136
+DEVTOPLEVELMODULETYPE EDIF
+DEVSIMULATOR Modelsim
+DEVGENERATEDSIMULATIONMODEL VHDL
+SOURCE synplify\leon3mp.edf
+DEPASSOC leon3mp leon3mp.ucf
+[Normal]
+xilxMapAllowLogicOpt=edif,  Virtex5, EDIF.t_placeAndRouteDes, 1102861051, True
+xilxMapCoverMode=edif,  Virtex5, EDIF.t_placeAndRouteDes, 1102861051, Speed
+xilxNgdbld_AUL=edif,  Virtex5, EDIF.t_placeAndRouteDes, 1102861051, True
+xilxPAReffortLevel=edif,  Virtex5, EDIF.t_placeAndRouteDes, 1102861051, Medium
+xilxNgdbldMacro=edif,  Virtex5, EDIF.t_placeAndRouteDes, 1105378344, ..\..\netlists\xilinx\Virtex5
+[STRATEGY-LIST]
+Normal=True

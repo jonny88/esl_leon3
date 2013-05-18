@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="1.3" title="leon3mp" device="xc5vlx50t-1ff1136" default_implementation="leon3mp">
+    <Options/>
+    <Implementation title="leon3mp" dir="lattice" description="leon3mp" default_strategy="Timing">
+        <Options/>
+        <Source name="../../lib/grlib/stdlib/version.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/stdlib/config.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/stdlib/stdlib.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/stdlib/stdio.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/stdlib/testlib.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/util/util.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/sparc/sparc.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/sparc/sparc_disas.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/sparc/cpu_disas.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/modgen/multlib.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/modgen/leaves.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/amba/amba.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/amba/devices.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/amba/defmst.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/amba/apbctrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/amba/ahbctrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/amba/dma2ahb_pkg.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/amba/dma2ahb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/amba/ahbmst.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/amba/dma2ahb_tp.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/grlib/amba/amba_tp.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="grlib"/>
+        </Source>
+        <Source name="../../lib/tech/unisim/ise/unisim_VPKG.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="unisim"/>
+        </Source>
+        <Source name="../../lib/tech/unisim/ise/unisim_VCOMP.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="unisim"/>
+        </Source>
+        <Source name="../../lib/tech/unisim/ise/simple_simprim.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="unisim"/>
+        </Source>
+        <Source name="../../lib/tech/unisim/ise/unisim_VITAL.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="unisim"/>
+        </Source>
+        <Source name="../../lib/tech/dware/simprims/DWpackages.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="dware"/>
+        </Source>
+        <Source name="../../lib/tech/dware/simprims/DW_Foundation_arith.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="dware"/>
+        </Source>
+        <Source name="../../lib/tech/dware/simprims/DW_Foundation_comp.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="dware"/>
+        </Source>
+        <Source name="../../lib/tech/dware/simprims/DW_Foundation_comp_arith.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="dware"/>
+        </Source>
+        <Source name="../../lib/synplify/sim/synplify.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="synplify"/>
+        </Source>
+        <Source name="../../lib/synplify/sim/synattr.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="synplify"/>
+        </Source>
+        <Source name="../../lib/techmap/gencomp/gencomp.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/gencomp/netcomp.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/inferred/memory_inferred.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/inferred/ddr_inferred.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/inferred/mul_inferred.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/inferred/ddr_phy_inferred.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/inferred/ddrphy_datapath.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/inferred/sim_pll.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/memory_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/buffer_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/pads_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/clkgen_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/tap_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/ddr_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/ddr_phy_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/grspwc_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/grspwc2_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/grusbhc_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/ssrctrl_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/sysmon_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/mul_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/spictrl_unisim.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/spictrl_unisim_comb0.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/unisim/spictrl_unisim_comb1.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/allclkgen.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/allddr.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/allmem.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/allmul.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/allpads.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/alltap.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/clkgen.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/clkmux.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/clkand.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/ddr_ireg.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/ddr_oreg.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/ddrphy.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/syncram.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/syncram64.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/syncram_2p.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/syncram_dp.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/syncfifo.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/regfile_3p.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/tap.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/techbuf.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/nandtree.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/clkpad.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/clkpad_ds.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/inpad.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/inpad_ds.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/iodpad.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/iopad.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/iopad_ds.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/lvds_combo.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/odpad.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/outpad.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/outpad_ds.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/toutpad.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/skew_outpad.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/grspwc_net.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/grspwc2_net.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/grlfpw_net.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/grfpw_net.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/leon4_net.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/mul_61x61.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/cpu_disas_net.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/grusbhc_net.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/ringosc.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/ssrctrl_net.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/grpci2_phy_net.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/system_monitor.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/grgates.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/inpad_ddr.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/outpad_ddr.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/iopad_ddr.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/syncram128bw.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/syncram256bw.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/syncram128.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/syncram156bw.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/techmult.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/spictrl_net.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/scanreg.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/syncrambw.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/techmap/maps/syncram_2pbw.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="techmap"/>
+        </Source>
+        <Source name="../../lib/eth/comp/ethcomp.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="eth"/>
+        </Source>
+        <Source name="../../lib/eth/core/greth_pkg.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="eth"/>
+        </Source>
+        <Source name="../../lib/eth/core/eth_rstgen.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="eth"/>
+        </Source>
+        <Source name="../../lib/eth/core/eth_edcl_ahb_mst.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="eth"/>
+        </Source>
+        <Source name="../../lib/eth/core/eth_ahb_mst.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="eth"/>
+        </Source>
+        <Source name="../../lib/eth/core/greth_tx.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="eth"/>
+        </Source>
+        <Source name="../../lib/eth/core/greth_rx.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="eth"/>
+        </Source>
+        <Source name="../../lib/eth/core/grethc.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="eth"/>
+        </Source>
+        <Source name="../../lib/eth/wrapper/greth_gen.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="eth"/>
+        </Source>
+        <Source name="../../lib/eth/wrapper/greth_gbit_gen.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="eth"/>
+        </Source>
+        <Source name="../../lib/opencores/occomp/occomp.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="opencores"/>
+        </Source>
+        <Source name="../../lib/opencores/i2c/i2c_master_bit_ctrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="opencores"/>
+        </Source>
+        <Source name="../../lib/opencores/i2c/i2c_master_byte_ctrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="opencores"/>
+        </Source>
+        <Source name="../../lib/opencores/i2c/i2coc.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="opencores"/>
+        </Source>
+        <Source name="../../lib/gaisler/arith/arith.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/arith/mul32.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/arith/div32.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/memctrl/memctrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/memctrl/sdctrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/memctrl/sdctrl64.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/memctrl/sdmctrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/memctrl/srctrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/leon3.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmuconfig.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmuiface.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/libmmu.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/libiu.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/libcache.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/libproc3.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/cachemem.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmu_icache.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmu_dcache.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmu_acache.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmutlbcam.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmulrue.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmulru.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmutlb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmutw.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmu.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mmu_cache.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/cpu_disasx.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/iu3.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/grfpwx.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/mfpwx.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/grlfpwx.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/tbufmem.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/dsu3x.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/dsu3.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/proc3.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/leon3s.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/leon3cg.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/irqmp.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/grfpwxsh.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/grfpushwx.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/leon3/leon3sh.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/misc.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/rstgen.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/gptimer.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/ahbram.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/ahbdpram.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/ahbtrace.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/ahbtrace_mb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/ahbtrace_mmb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/grgpio.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/ahbstat.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/logan.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/apbps2.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/charrom_package.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/charrom.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/apbvga.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/svgactrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/wild.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/wild2ahb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/grsysmon.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/gracectrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/grgpreg.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/ahbmst2.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/ahb_mst_iface.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/misc/grgprbank.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/net/net.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/uart/uart.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/uart/libdcom.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/uart/apbuart.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/uart/dcom.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/uart/dcom_uart.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/uart/ahbuart.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/sim/sim.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/sim/sram.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/sim/ata_device.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/sim/sram16.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/sim/phy.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/sim/ahbrep.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/sim/delay_wire.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/sim/pwm_check.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/sim/usbsim.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/sim/grusbdcsim.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/sim/grusb_dclsim.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/jtag/jtag.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/jtag/libjtagcom.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/jtag/jtagcom.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/jtag/ahbjtag.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/jtag/ahbjtag_bsd.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/jtag/bscanregs.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/jtag/bscanregsbd.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/jtag/jtagtst.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/greth/ethernet_mac.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/greth/greth.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/greth/greth_mb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/greth/greth_gbit.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/greth/greth_gbit_mb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/greth/grethm.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/ddr/ddrphy_wrap.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/ddr/ddrsp16a.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/ddr/ddrsp32a.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/ddr/ddrsp64a.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/ddr/ddrspa.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/ddr/ddr2spa.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/ddr/ddr2buf.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/ddr/ddr2spax.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/ddr/ddr2spax_ahb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/ddr/ddr2spax_ddr.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/i2c/i2c.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/i2c/i2cmst.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/i2c/i2cmst_gen.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/i2c/i2cslv.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/i2c/i2c2ahbx.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/i2c/i2c2ahb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/i2c/i2c2ahb_apb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/spi/spi.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/spi/spimctrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/spi/spictrlx.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/spi/spictrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/spi/spi2ahbx.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/spi/spi2ahb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/spi/spi2ahb_apb.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/gaisler/spi/spi_flash.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="gaisler"/>
+        </Source>
+        <Source name="../../lib/esa/memoryctrl/memoryctrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="esa"/>
+        </Source>
+        <Source name="../../lib/esa/memoryctrl/mctrl.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="esa"/>
+        </Source>
+        <Source name="../../lib/cypress/ssram/components.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="cypress"/>
+        </Source>
+        <Source name="../../lib/cypress/ssram/package_utility.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="cypress"/>
+        </Source>
+        <Source name="../../lib/cypress/ssram/cy7c1354b.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="cypress"/>
+        </Source>
+        <Source name="../../lib/cypress/ssram/cy7c1380d.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="cypress"/>
+        </Source>
+        <Source name="../../lib/hynix/ddr2/HY5PS121621F_PACK.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="hynix"/>
+        </Source>
+        <Source name="../../lib/hynix/ddr2/HY5PS121621F.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="hynix"/>
+        </Source>
+        <Source name="../../lib/hynix/ddr2/components.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="hynix"/>
+        </Source>
+        <Source name="../../lib/micron/sdram/components.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="micron"/>
+        </Source>
+        <Source name="../../lib/micron/sdram/mt48lc16m16a2.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="micron"/>
+        </Source>
+        <Source name="../../lib/micron/ddr/mt46v16m16.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="micron"/>
+        </Source>
+        <Source name="../../lib/work/debug/debug.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="work"/>
+        </Source>
+        <Source name="../../lib/work/debug/grtestmod.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="work"/>
+        </Source>
+        <Source name="../../lib/work/debug/cpu_disas.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly" excluded="TRUE" >
+            <Options lib="work"/>
+        </Source>
+        <Source name="config.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="ahbrom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="svga2ch7301c.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="leon3mp.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="leon3mp.ucf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="default.sdc" type="Synplify Design Constraints File" type_short="SDC">
+            <Options/>
+        </Source>
+    </Implementation>
+</BaliProject>

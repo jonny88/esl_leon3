@@ -1,0 +1,1 @@
+grlib unisim dware synplify techmap eth opencores gaisler esa cypress hynix micron work 
